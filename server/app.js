@@ -20,11 +20,13 @@ app.use(function(req, res, next) {
 
 require('./routes')(app);
 
+let port = process.env.PORT || appConfig.server.port || 8080
+
 db
   .sequelize
   .sync()
   .then(function() {
-    app.listen(appConfig.server.port, () => {
-      console.log('Server listen ' + appConfig.server.port);
+    app.listen(port, () => {
+      console.log('Server listen ' + port);
     })
   });
