@@ -14,7 +14,7 @@ For check how this work you should start both parts.
 Please check `server/config.js` before start, for make sure you have configuration for database and twitter account 
 
 - `git clone https://github.com/WilixLead/tweet-test.git`
-- `cd tweet-test/server`
-- `npm run full-install //for install pachages in both parts`
+- `cd tweet-test`
+- `npm i`
 - `npm start`
 - Now follow to `http://localhost:4000` in your browser

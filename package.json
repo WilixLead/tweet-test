@@ -1,0 +1,20 @@
+{
+  "name": "twitter-feed",
+  "version": "1.0.0",
+  "description": "This project contain two parts: Backend and frontend. For check how this work you should start both parts.",
+  "main": "index.js",
+  "scripts": {
+    "install": "cd frontend; npm i --prod; cd ../server; npm i --prod; cd ..",
+    "start": "cd frontend/; npm run build; cd ../server/; node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilixLead/tweet-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WilixLead/tweet-test/issues"
+  },
+  "homepage": "https://github.com/WilixLead/tweet-test#readme"
+}
