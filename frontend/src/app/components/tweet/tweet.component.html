@@ -1,0 +1,32 @@
+<div class="media">
+  <div class="media-left media-top">
+    <a href="#">
+      <img class="media-object img-circle"
+           [src]="tweet.user.profile_image_url_https">
+    </a>
+  </div>
+  <div class="media-body">
+    <h5 class="media-heading">
+      {{tweet.user.screen_name}}
+      <small class="text-muted">@{{tweet.user.name}}</small>
+      <div class="pull-right">
+        <button type="button"
+                class="btn btn-default"
+                (click)="star()"
+                *ngIf="!tweet.stared">
+          <span class="glyphicon glyphicon-star-empty"></span>
+        </button>
+        <button type="button"
+                class="btn btn-default"
+                (click)="unstar()"
+                *ngIf="tweet.stared">
+          <span class="glyphicon glyphicon-trash"></span>
+        </button>
+      </div>
+    </h5>
+    <img class="img-responsive"
+         *ngIf="tweet.media"
+         [src]="tweet.media[0].media_url_https">
+    <p>{{tweet.text}}</p>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+.media {
+  background: #fff;
+  padding: 10px;
+  border-bottom: 1px #E6ECF0 solid;
+  max-width: 600px;
+}
+
+.media p {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 14px;
+  line-height: 20px;
+}

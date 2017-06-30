@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "full-install": "cd ./../frontend/; npm i --prod; cd ../server; npm i --prod",
+    "start": "cd ./../frontend/; npm run build; cd ../server/; node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "jconf": "0.0.3",
+    "pg": "^6.4.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.2.0",
+    "twit": "^2.2.9"
+  }
+}
